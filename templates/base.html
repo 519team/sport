@@ -134,25 +134,27 @@
         <div class="col-xs-12">
     <div class="list-group">
     <div class="list-group-item heading"><strong>Категории</strong></div>
-        <a href="{% url 'cat_url' index_cat=category.index_cat%}" class="list-group-item hide-on-mobile">Распродажа</a>
-        <a href="https://www.parma-kelme.ru/shop/category/18" class="list-group-item hide-on-mobile">Клубная форма</a>
-        <a href="https://www.parma-kelme.ru/shop/category/10" class="list-group-item hide-on-mobile">Футбольная форма</a>
-        <a href="https://www.parma-kelme.ru/shop/category/25" class="list-group-item hide-on-mobile">Вратарская форма</a>
-        <a href="https://www.parma-kelme.ru/shop/category/6" class="list-group-item hide-on-mobile">Волейбольная форма</a>
-        <a href="https://www.parma-kelme.ru/shop/category/5" class="list-group-item hide-on-mobile">Регбийная форма</a>
-        <a href="https://www.parma-kelme.ru/shop/category/12" class="list-group-item hide-on-mobile">Гандбольная форма</a>
-        <a href="https://www.parma-kelme.ru/shop/category/13" class="list-group-item hide-on-mobile">Кроссовки </a>
-        <a href="https://www.parma-kelme.ru/shop/category/20" class="list-group-item hide-on-mobile">Футбольные бутсы</a>
-        <a href="https://www.parma-kelme.ru/shop/category/7" class="list-group-item hide-on-mobile">Баскетбольная форма</a>
-        <a href="https://www.parma-kelme.ru/shop/category/9" class="list-group-item hide-on-mobile">Аксессуары для тренировок</a>
-        <a href="https://www.parma-kelme.ru/shop/category/15" class="list-group-item hide-on-mobile">Куртки и ветровки </a>
-        <a href="https://www.parma-kelme.ru/shop/category/16" class="list-group-item hide-on-mobile">Спортивные костюмы </a>
-        <a href="https://www.parma-kelme.ru/shop/category/21" class="list-group-item hide-on-mobile">Мячи</a>
-        <a href="https://www.parma-kelme.ru/shop/category/19" class="list-group-item hide-on-mobile">Рюкзаки и сумки</a>
-        <a href="https://www.parma-kelme.ru/shop/category/8" class="list-group-item hide-on-mobile">Легкая атлетика</a>
-        <a href="https://www.parma-kelme.ru/shop/category/22" class="list-group-item hide-on-mobile">Детские спортивно-игровые комплексы (ДСК)</a>
-        <a href="https://www.parma-kelme.ru/shop/category/23" class="list-group-item hide-on-mobile">Дачные детские спортивные комплексы</a>
-        <a href="https://www.parma-kelme.ru/shop/category/24" class="list-group-item hide-on-mobile">Уличные тренажеры и оборудование для ГТО</a>
+    {% for category in categorys%}
+        <a href="{% url 'cat_url' index_cat=category.index_cat%}" class="list-group-item hide-on-mobile">({category.name_category})</a>
+    {% endfor %}
+<!--         <a href="https://www.parma-kelme.ru/shop/category/18" class="list-group-item hide-on-mobile">Клубная форма</a>
+<a href="https://www.parma-kelme.ru/shop/category/10" class="list-group-item hide-on-mobile">Футбольная форма</a>
+<a href="https://www.parma-kelme.ru/shop/category/25" class="list-group-item hide-on-mobile">Вратарская форма</a>
+<a href="https://www.parma-kelme.ru/shop/category/6" class="list-group-item hide-on-mobile">Волейбольная форма</a>
+<a href="https://www.parma-kelme.ru/shop/category/5" class="list-group-item hide-on-mobile">Регбийная форма</a>
+<a href="https://www.parma-kelme.ru/shop/category/12" class="list-group-item hide-on-mobile">Гандбольная форма</a>
+<a href="https://www.parma-kelme.ru/shop/category/13" class="list-group-item hide-on-mobile">Кроссовки </a>
+<a href="https://www.parma-kelme.ru/shop/category/20" class="list-group-item hide-on-mobile">Футбольные бутсы</a>
+<a href="https://www.parma-kelme.ru/shop/category/7" class="list-group-item hide-on-mobile">Баскетбольная форма</a>
+<a href="https://www.parma-kelme.ru/shop/category/9" class="list-group-item hide-on-mobile">Аксессуары для тренировок</a>
+<a href="https://www.parma-kelme.ru/shop/category/15" class="list-group-item hide-on-mobile">Куртки и ветровки </a>
+<a href="https://www.parma-kelme.ru/shop/category/16" class="list-group-item hide-on-mobile">Спортивные костюмы </a>
+<a href="https://www.parma-kelme.ru/shop/category/21" class="list-group-item hide-on-mobile">Мячи</a>
+<a href="https://www.parma-kelme.ru/shop/category/19" class="list-group-item hide-on-mobile">Рюкзаки и сумки</a>
+<a href="https://www.parma-kelme.ru/shop/category/8" class="list-group-item hide-on-mobile">Легкая атлетика</a>
+<a href="https://www.parma-kelme.ru/shop/category/22" class="list-group-item hide-on-mobile">Детские спортивно-игровые комплексы (ДСК)</a>
+<a href="https://www.parma-kelme.ru/shop/category/23" class="list-group-item hide-on-mobile">Дачные детские спортивные комплексы</a>
+<a href="https://www.parma-kelme.ru/shop/category/24" class="list-group-item hide-on-mobile">Уличные тренажеры и оборудование для ГТО</a> -->
     </div>        </div>
     </div>
 
