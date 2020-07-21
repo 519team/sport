@@ -1,0 +1,15 @@
+		<a href="{% url 'item_url' index_item=item.index_item%}" class="col-xs-6 col-md-3 col-sm-6 productcard" title="Errea поло SIBIR " data-categories="[]" data-brand="ERREA" data-sizes="[&quot;S&quot;,&quot;XXL&quot;,&quot;XXXL&quot;,&quot;XXXXL&quot;]" style="">
+			<div class="productcard__panel" style="">
+				<div class="productcard__image" style="">
+					<img src="item.image.path" alt="Errea поло SIBIR ">        </div>
+					<div class="productcard__caption">
+					{{item.title}}         </div>
+					<div class="item-price-container">
+						<span class="productcard__caption__articul">{{item.articule}}</span>
+
+						<!-- <del class="old-price">1&nbsp;{{item.one_price}}&nbsp;руб</del> -->
+						<span class="item-price">{{item.one_price}}&nbsp;руб</span>
+
+					</div>
+				</div>
+			</a>
